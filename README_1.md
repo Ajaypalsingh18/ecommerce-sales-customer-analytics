@@ -2,6 +2,24 @@
 
 End-to-end data analysis project simulating a real e-commerce retailer's sales, customer, and product data — covering data cleaning, SQL analysis, exploratory data analysis (EDA), and business insights.
 
+> **Top 20% of customers drive 43.4% of revenue** · **92.1% repeat purchase rate** · **21.6% cancellation/return rate** — full breakdown below.
+
+## ⚡ Quick Start
+No need to run anything to review this — [charts](./charts) and [SQL queries](./sql/analysis_queries.sql) are viewable directly in this repo. To run it yourself:
+```bash
+git clone https://github.com/Ajaypalsingh18/ecommerce-sales-customer-analytics.git
+cd ecommerce-sales-customer-analytics
+pip install -r requirements.txt
+
+cd data
+python3 generate_data.py       # builds the CSVs
+python3 build_db.py            # loads CSVs into SQLite
+cd ..
+
+sqlite3 data/ecommerce.db < sql/analysis_queries.sql   # run all 10 SQL queries
+cd analysis && python3 eda_analysis.py                 # run Python EDA + regenerate charts
+```
+
 ## 🎯 Business Problem
 An e-commerce retailer wants to understand: Which products/categories drive revenue? Who are the most valuable customers? Where are order cancellations hurting the business? This project answers those questions using SQL and Python, the same way a data analyst would approach a real stakeholder request.
 
@@ -21,14 +39,14 @@ Data spans **Jan 2025 – Mar 2026** (15 months), built with realistic seasonali
 
 | Metric | Value |
 |---|---|
-| Total Revenue (Delivered orders) | ₹1.85 Cr |
+| Total Revenue (Delivered orders) | ₹18,521,008 (₹1.85 Cr) |
 | Total Delivered Orders | 5,849 |
 | Average Order Value | ₹3,167 |
 | Cancellation/Return Rate | 21.6% |
 | **Top 20% of customers drive** | **43.4% of total revenue** |
 | Repeat Purchase Rate | 92.1% of customers ordered 2+ times |
 | Top Category | Electronics (highest revenue share) |
-| Highest cancellation/return city | Identified via SQL query #7 — flagged for logistics review |
+| Highest cancellation/return city | Mumbai (23.8%) — flagged for logistics review |
 
 **So what?** The 43.4% revenue concentration in the top quintile of customers means a loyalty/retention program targeting Premium-segment customers would protect a disproportionate share of revenue. The 21.6% cancellation rate is high enough to warrant a root-cause investigation by city and payment method — both broken out in the SQL queries.
 
@@ -49,8 +67,10 @@ All charts in [`/charts`](./charts):
 
 Run it yourself:
 ```bash
-python3 data/generate_data.py        # builds the CSVs
-python3 data/build_db.py             # loads CSVs into SQLite (ecommerce.db)
+cd data
+python3 generate_data.py             # builds the CSVs
+python3 build_db.py                  # loads CSVs into SQLite (ecommerce.db)
+cd ..
 sqlite3 data/ecommerce.db < sql/analysis_queries.sql
 ```
 
@@ -68,7 +88,7 @@ python3 eda_analysis.py
 
 ## 📁 Project Structure
 ```
-ecommerce-sales-analytics/
+ecommerce-sales-customer-analytics/
 ├── data/
 │   ├── generate_data.py     # synthetic data generator
 │   ├── customers.csv

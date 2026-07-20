@@ -135,10 +135,10 @@ for day_offset in range(n_days):
 orders_df = pd.DataFrame(orders)
 order_items_df = pd.DataFrame(order_items)
 
-customers_df.to_csv("/home/claude/ecommerce-sales-analytics/data/customers.csv", index=False)
-products_df.to_csv("/home/claude/ecommerce-sales-analytics/data/products.csv", index=False)
-orders_df.to_csv("/home/claude/ecommerce-sales-analytics/data/orders.csv", index=False)
-order_items_df.to_csv("/home/claude/ecommerce-sales-analytics/data/order_items.csv", index=False)
+customers_df.to_csv("customers.csv", index=False)
+products_df.to_csv("products.csv", index=False)
+orders_df.to_csv("orders.csv", index=False)
+order_items_df.to_csv("order_items.csv", index=False)
 
 print(f"Customers: {len(customers_df)}")
 print(f"Products: {len(products_df)}")
