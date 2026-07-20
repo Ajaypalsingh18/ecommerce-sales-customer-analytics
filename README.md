@@ -50,7 +50,7 @@ All charts in [`/charts`](./charts):
 Run it yourself:
 ```bash
 python3 data/generate_data.py        # builds the CSVs
-python3 data/build_db.py             # loads CSVs into SQLite (ecommerce.db)
+cd data && python3 build_db.py       # loads CSVs into SQLite (ecommerce.db)
 sqlite3 data/ecommerce.db < sql/analysis_queries.sql
 ```
 
