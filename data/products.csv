@@ -1,0 +1,39 @@
+product_id,product_name,category,unit_price,unit_cost
+PROD0001,Wireless Earbuds,Electronics,4529,2686.71
+PROD0002,Bluetooth Speaker,Electronics,3029,1944.16
+PROD0003,Smartwatch,Electronics,2559,1471.99
+PROD0004,Power Bank 20000mAh,Electronics,1199,838.57
+PROD0005,USB-C Charger,Electronics,4119,2371.5
+PROD0006,Laptop Backpack,Electronics,3799,2474.16
+PROD0007,Wireless Mouse,Electronics,4319,3065.31
+PROD0008,Mechanical Keyboard,Electronics,4749,2991.33
+PROD0009,Cotton T-Shirt,Fashion,1599,1009.07
+PROD0010,Denim Jeans,Fashion,2449,1728.22
+PROD0011,Running Shoes,Fashion,2119,1447.68
+PROD0012,Leather Wallet,Fashion,989,576.77
+PROD0013,Sunglasses,Fashion,549,332.1
+PROD0014,Formal Shirt,Fashion,2179,1558.12
+PROD0015,Sports Cap,Fashion,879,573.61
+PROD0016,Backpack,Fashion,309,197.07
+PROD0017,Non-Stick Pan Set,Home & Kitchen,3049,2193.02
+PROD0018,Electric Kettle,Home & Kitchen,1959,1301.33
+PROD0019,LED Desk Lamp,Home & Kitchen,2469,1420.55
+PROD0020,Storage Containers,Home & Kitchen,1939,1379.77
+PROD0021,Bedsheet Set,Home & Kitchen,549,333.85
+PROD0022,Air Fryer,Home & Kitchen,1659,936.74
+PROD0023,Vacuum Flask,Home & Kitchen,2179,1282.42
+PROD0024,Face Wash,Beauty,889,508.93
+PROD0025,Moisturizer,Beauty,409,267.39
+PROD0026,Sunscreen SPF50,Beauty,319,178.41
+PROD0027,Hair Serum,Beauty,399,232.29
+PROD0028,Lipstick,Beauty,569,333.88
+PROD0029,Perfume,Beauty,509,284.13
+PROD0030,Yoga Mat,Sports & Fitness,2669,1668.11
+PROD0031,Resistance Bands,Sports & Fitness,1129,733.8
+PROD0032,Dumbbell Set,Sports & Fitness,1119,711.24
+PROD0033,Skipping Rope,Sports & Fitness,2249,1449.02
+PROD0034,Gym Bag,Sports & Fitness,629,413.47
+PROD0035,Notebook Set,Books & Stationery,69,43.17
+PROD0036,Fountain Pen,Books & Stationery,129,80.03
+PROD0037,Desk Organizer,Books & Stationery,189,131.78
+PROD0038,Sticky Notes Pack,Books & Stationery,459,284.84
